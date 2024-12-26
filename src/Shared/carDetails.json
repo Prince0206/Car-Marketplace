@@ -1,0 +1,212 @@
+{
+  "carDetails": [
+    {
+      "label": "Listing Title",
+      "name": "listingTitle",
+      "fieldType": "text",
+      "required": true,
+      "column": 2,
+      "icon": "FaClipboardList"
+    },
+    {
+      "label": "Tagline",
+      "name": "tagline",
+      "fieldType": "text",
+      "column": 2,
+      "icon": "FaTag"
+    },
+    {
+      "label": "Original Price",
+      "name": "originalPrice",
+      "fieldType": "text",
+      "column": 1,
+      "icon": "FaDollarSign"
+    },
+    {
+      "label": "Selling Price",
+      "name": "sellingPrice",
+      "fieldType": "text",
+      "required": true,
+      "column": 1,
+      "icon": "FaMoneyBillAlt"
+    },
+    {
+      "label": "Category",
+      "name": "category",
+      "fieldType": "dropdown",
+      "options": [
+        "Sedan",
+        "SUV",
+        "Truck",
+        "Coupe",
+        "Convertible",
+        "Hybrid",
+        "Van",
+        "Electric",
+        "Hatchback"
+      ],
+      "required": true,
+      "column": 1,
+      "icon": "FaCar"
+    },
+    {
+      "label": "Condition",
+      "name": "condition",
+      "fieldType": "dropdown",
+      "required": true,
+      "options": ["New", "Used", "Certified Pre-Owned"],
+      "icon": "FaCarSide"
+    },
+    {
+      "label": "Transmission",
+      "name": "transmission",
+      "fieldType": "dropdown",
+      "options": ["Automatic", "Manual"],
+      "required": true,
+      "column": 1,
+      "icon": "FaCogs"
+    },
+    {
+      "label": "Make",
+      "name": "make",
+      "fieldType": "dropdown",
+      "required": true,
+      "options": [
+        "Toyota",
+        "Honda",
+        "Ford",
+        "Chevrolet",
+        "Nissan",
+        "BMW",
+        "Mercedes-Benz",
+        "Audi",
+        "Tesla",
+        "Volkwagen",
+        "hyundai",
+        "KIA",
+        "Land Rover",
+        "Jaguar",
+        "Mitsubishi",
+        "Suzuki",
+        "Renault",
+        "Rolls-Royce",
+        "Porsche",
+        "Volvo",
+        "Bugatti",
+        "Mazda",
+        "Infiniti",
+        "Fiat",
+        "BYD",
+        "Buick"
+      ],
+      "icon": "FaCar"
+    },
+    {
+      "label": "Model",
+      "name": "model",
+      "fieldType": "text",
+      "required": true,
+      "column": 1,
+      "icon": "FaCarSide"
+    },
+    {
+      "label": "Year",
+      "name": "year",
+      "fieldType": "number",
+      "required": true,
+      "column": 1,
+      "icon": "FaCalendarAlt"
+    },
+    {
+      "label": "Drive Type",
+      "name": "driveType",
+      "fieldType": "dropdown",
+      "options": ["FWD", "RWD", "AWD", "4WD"],
+      "required": true,
+      "column": 1,
+      "icon": "FaRoad"
+    },
+    {
+      "label": "Engine Size",
+      "name": "engineSize",
+      "fieldType": "text",
+      "column": 1,
+      "icon": "FaWrench"
+    },
+    {
+      "label": "Fuel Type",
+      "name": "fueltype",
+      "fieldType": "dropdown",
+      "options": ["Petrol", "Desiel", "Electric"],
+      "required": true,
+      "column": 1,
+      "icon": "FaGasPump"
+    },
+    {
+      "label": "Mileage",
+      "name": "mileage",
+      "fieldType": "dropdown",
+      "options": ["3000+", "50,000+", "100,000+"],
+      "required": true,
+      "column": 1,
+      "icon": "FaTachometerAlt"
+    },
+    {
+      "label": "Cylinder",
+      "name": "cylinder",
+      "fieldType": "number",
+      "column": 1,
+      "icon": "FaCircle"
+    },
+    {
+      "label": "Door",
+      "name": "Door",
+      "fieldType": "number",
+      "column": 1,
+      "icon": "FaDoorClosed"
+    },
+    {
+      "label": "VIN",
+      "name": "VIN",
+      "fieldType": "text",
+      "column": 1,
+      "icon": "FaIndustry"
+    },
+    {
+      "label": "Color",
+      "name": "color",
+      "fieldType": "dropdown",
+      "options": [
+        "RED",
+        "BLUE",
+        "BLACK",
+        "GREEN",
+        "PINK",
+        "YELLOW",
+        "ORANGE",
+        "GOLD",
+        "WHITE",
+        "CUSTOMIZED"
+      ],
+      "required": true,
+      "column": 1,
+      "icon": "FaPalette"
+    },
+    {
+      "label": "Offer Type",
+      "name": "offerType",
+      "fieldType": "dropdown",
+      "options": ["Buy", "Hot Offer", "Sell", "Urgent"],
+      "column": 2,
+      "icon": "FaDollarSign"
+    },
+    {
+      "label": "Listing Description",
+      "name": "ListingDescription",
+      "fieldType": "textarea",
+      "required": true,
+      "column": 2,
+      "icon": "FaFileAlt"
+    }
+  ]
+}

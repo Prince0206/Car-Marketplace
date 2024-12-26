@@ -1,0 +1,109 @@
+{
+    "features": [
+        {
+            "label": "Air Conditioner",
+            "name": "airConditioner",
+            "fieldType": "checkbox"
+        },
+        {
+            "label": "Digital Odometer",
+            "name": "digitalOdometer",
+            "fieldType": "checkbox"
+        },
+        {
+            "label": "Heater",
+            "name": "heater",
+            "fieldType": "checkbox"
+        },
+        {
+            "label": "Leather Seats",
+            "name": "LeatherSeats",
+            "fieldType": "checkbox"
+        },
+        {
+            "label": "Tachometer",
+            "name": "tachometer",
+            "fieldType": "checkbox"
+        },
+        {
+            "label": "Touchscreen Display",
+            "name": "touchscreenDisplay",
+            "fieldType": "checkbox"
+        },
+        {
+            "label": "Anti-lock Braking",
+            "name": "antiLockingBraking",
+            "fieldType": "checkbox"
+        },
+        {
+            "label": "Child Safety Locks",
+            "name": "childSafetyLocks",
+            "fieldType": "checkbox"
+        },
+        {
+            "label": "Stabilty Control",
+            "name": "stabilityControl",
+            "fieldType": "checkbox"
+        },
+        {
+            "label": "Comfort & Convenience",
+            "name": "Comfort&Convenience",
+            "fieldType": "checkbox"
+        },
+        {
+            "label": "Bluetooth",
+            "name": "Bluetooth",
+            "fieldType": "checkbox"
+        },
+        {
+            "label": "Panaramic Moonroof",
+            "name": "PanaramicMoonroof",
+            "fieldType": "checkbox"
+        },
+        {
+            "label": "Traction Control",
+            "name": "TractionControl",
+            "fieldType": "checkbox"
+        },
+        {
+            "label": "Driver Air Bag",
+            "name": "DriverAirbag",
+            "fieldType": "checkbox"
+        },
+        {
+            "label": "Rear Spoiler",
+            "name": "rearSpoiler",
+            "fieldType": "checkbox"
+        },
+        {
+            "label": "Power Door Locks",
+            "name": "PowerdoorLocks",
+            "fieldType": "checkbox"
+        },
+        {
+            "label": "Fog Lights Front",
+            "name": "Foglightsfronts",
+            "fieldType": "checkbox"
+        },
+        {
+            "label": "Windows-Electric",
+            "name": "window-electric",
+            "fieldType": "checkbox"
+        },
+        {
+            "label": "Apple CarPlay",
+            "name": "AppleCarplay",
+            "fieldType": "checkbox"
+        },
+        {
+            "label": "Vanity Mirror",
+            "name": "vanitymirror",
+            "fieldType": "checkbox"
+        },
+        {
+            "label": "Rain Sensing Wiper",
+            "name": "rainsensingWiper",
+            "fieldType": "checkbox"
+        }
+    ]
+}
