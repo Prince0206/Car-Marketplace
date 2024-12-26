@@ -17,57 +17,60 @@ import FinancialCalculator from "../components/FinancialCalculator";
 import MostSearchedCar from "@/components/MostSearchedCar";
 
 function ListingDetail() {
+  const { id } = useParams();
+  const [carDetail, setCarDetail] = useState();
 
-    const {id}=useParams();
-    const [carDetail, setCarDetail] = useState();
+  useEffect(() => {
+    GetCarDetail();
+  }, []);
 
-    useEffect(()=>{
-        GetCarDetail();
-    },[])
+  const GetCarDetail = async () => {
+    const result = await db
+      .select()
+      .from(CarListing)
+      .innerJoin(CarImages, eq(CarListing.id, CarImages.carListingId))
+      .where(eq(CarListing.id, id));
 
-    const GetCarDetail=async()=>{
-        const result=await db.select().from(CarListing)
-        .innerJoin(CarImages,eq(CarListing.id,CarImages.carListingId))
-        .where(eq(CarListing.id,id));
+    const resp = Service.FormatResult(result);
 
-        const resp=Service.FormatResult(result);
+    setCarDetail(resp[0]);
+  };
+  return (
+    <div>
+      <Header />
 
-        setCarDetail(resp[0]);
-    }
-  return <div>
-    <Header/>
-  
-  <div className="p-10 md:px-20">
-     {/* Header Detail Component */}
-    <DetailsHeader carDetail={carDetail}/>
+      <div className="p-10 md:px-20">
+        {/* Header Detail Component */}
+        <DetailsHeader carDetail={carDetail} />
 
-    <div className="grid grid-cols-1 md:grid-cols-3 w-full mt-10 gap-5">
-         {/* Left */}
-         <div className="md:col-span-2 ">
+        <div className="grid grid-cols-1 md:grid-cols-3 w-full mt-10 gap-5">
+          {/* Left */}
+          <div className="md:col-span-2 ">
             {/* Image Gallery */}
-                <ImageGallery carDetail={carDetail}/>
+            <ImageGallery carDetail={carDetail} />
             {/* Description */}
-                 <Description carDetail={carDetail}/>
+            <Description carDetail={carDetail} />
             {/* Features List */}
-                <Features features={carDetail?.features}/>
+            <Features features={carDetail?.features} />
             {/* Financial Calculator */}
-            <FinancialCalculator carDetail={carDetail}/>
-         </div>
+            <FinancialCalculator carDetail={carDetail} />
+          </div>
 
-         {/* Right */}
-         <div >
+          {/* Right */}
+          <div>
             {/* Pricing */}
-            <Pricing carDetail={carDetail}/>
+            <Pricing carDetail={carDetail} />
             {/* Car Properties */}
-            <Specification carDetail={carDetail}/>
+            <Specification carDetail={carDetail} />
             {/* Owners Details */}
-            <OwnersDetail carDetail={carDetail}/>
-         </div>
+            <OwnersDetail carDetail={carDetail} />
+          </div>
+        </div>
+        <MostSearchedCar />
+      </div>
+      <Footer />
     </div>
-    <MostSearchedCar/>
-  </div>
- <Footer/>
-  </div>;
+  );
 }
 
 export default ListingDetail;
