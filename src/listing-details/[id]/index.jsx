@@ -18,7 +18,7 @@ import MostSearchedCar from "@/components/MostSearchedCar";
 
 function ListingDetail() {
   const { id } = useParams();
-  const [carDetail, setCarDetail] = useState(null);
+  const [carDetail, setCarDetail] = useState();
 
   useEffect(() => {
     getCarDetail();
