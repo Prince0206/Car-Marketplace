@@ -7,9 +7,9 @@ function InfoSection() {
         <div className="grid grid-cols-1 gap-4 md:grid-cols-4 md:items-center md:gap-8">
           <div className="md:col-span-3">
             <img
-              src="/public/Beabus2.png"
+              src="/public/Brabu2.jpg"
               className="rounded"
-              alt="Beabus Image"
+              alt="Brabus Image"
             />
           </div>
 

@@ -8,15 +8,15 @@ function Header() {
   return (
     <div className="flex justify-between items-center shadow-sm p-5">
       <Link to={"/"}>
-      <img src="/car-brands-logo.svg" width={100} height={90} />
+        <img src="/car-brands-logo.svg" width={100} height={90} />
       </Link>
 
       <ul className="hidden md:flex gap-16">
-      <Link to={"/"}>
-        <li className="font-medium hover:scale-105 transition-all cursor-pointer hover:text-primary">
-          Home
-        </li>
-      </Link>
+        <Link to={"/"}>
+          <li className="font-medium hover:scale-105 transition-all cursor-pointer hover:text-primary">
+            Home
+          </li>
+        </Link>
         <li className="font-medium hover:scale-105 transition-all cursor-pointer hover:text-primary">
           Search
         </li>
@@ -36,9 +36,7 @@ function Header() {
           </Link>
         </div>
       ) : (
-        <Link to={"/profile"}>
-          <Button>Submit Listing</Button>
-        </Link>
+        <Button>Submit Listing</Button>
       )}
     </div>
   );
